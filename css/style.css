@@ -1,0 +1,44 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:greenyellow !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+.main-card{
+    width: 45em;
+    height: 46em;
+    background-color: blueviolet;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px black;
+}
+.card-container{
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+
+}
+.img-card{
+    width: 6.5em;
+    height: 6.5em;
+}
+
+
+.flip-card .img-card {
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
