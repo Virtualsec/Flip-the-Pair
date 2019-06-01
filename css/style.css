@@ -3,8 +3,6 @@
     padding:0px;
 }
 body{
-    width: 100vw;
-    height: 100vh;
     background-color:greenyellow !important;
     display: flex;
     justify-content: center;
@@ -17,7 +15,7 @@ body{
 }
 .main-card{
     width: 45em;
-    height: 46em;
+    height: 45em;
     background-color: blueviolet;
     border-radius: 5px;
     box-shadow: 5px 5px 15px black;
@@ -35,6 +33,13 @@ body{
 .img-card{
     width: 6.5em;
     height: 6.5em;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 10px rgb(63, 63, 63);
+}
+.img-card img{
+    width: 4.5em;
+    height: 4.5em;
 }
 
 
