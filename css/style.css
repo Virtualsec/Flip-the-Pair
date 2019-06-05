@@ -1,9 +1,5 @@
-*{
-    margin:0px;
-    padding:0px;
-}
 body{
-    background-color:greenyellow !important;
+	background-color:greenyellow !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,71 +7,99 @@ body{
     top: 0%;
     bottom: 0%;
     left: 0%;
-    right: 0%;
+    right: 0%;	
 }
+.game-title {
+	font-weight: bold !important;
+	font-size: 32px !important;
+}
+.main-board{
+	width: 550px;
+	height: 605px;
+	background-color:purple;
+	border-radius:5px;
+}
+.main-container{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	perspective: 1000px;
+}
+ 
 .main-card{
-    width: 45em;
-    height: 45em;
-    background-color: blueviolet;
-    border-radius: 5px;
-    box-shadow: 5px 5px 15px black;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	transform-style: preserve-3d;
+	transition: all 0.9s ease ;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	
 }
-.card-container{
-    justify-content:center;
-    align-items: center;
-    position: relative;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
+.main-card:active{
+	transform: scale(.80);
 }
-.img-card{
-    width: 6.5em;
-    height: 6.5em;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 4px 4px 10px rgb(63, 63, 63);
+.main-card.flip{
+	transform: rotateY(180deg);
 }
-.img-card img{
-    width: 4.5em;
-    height: 4.5em;
-    justify-content: center;
-    align-items: center;
+.front-card{
+	position: absolute !important;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 15px;
 }
-.flip-card {
-    background-color: transparent;
-    perspective: 1000px;
-  }
-  
-  .flip-card-inner {
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-back {
-    justify-content: center;
-    align-items: center;
-    transform: rotateY(180deg);
-  }
-
-.start-btn{
-  width: 150px !important;
-  height: 40px;
-  font-weight: bold;
-  color: aliceblue;
-  font-size: 24px;
-  text-decoration: none;
-  border-radius: 25px;
-  border: none;
-  text-align: center;
-  background-color:rgb(69, 25, 110) !important;
+.back-card {
+	position: absolute !important;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+	background-color: #fff;
+	border-radius: 15px;
+}
+.front-card img{
+	width: 70px;
+	height: 70px;
+}
+.back-card img{
+	width: 70px;
+	height: 70px;
+}
+@media (max-width: 650px){
+	.game-title{
+		font-weight: bold !important;
+		font-size: 24px !important;
+	}
+	.main-board{
+		width: 380px;
+		height: 430px;
+		background-color:purple;
+	}
+	.main-card{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		transform-style: preserve-3d;
+		transition: all 0.9s ease ;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	}
+	.main-container{
+		position: relative;
+		width: 60px;
+		height: 60px;
+		perspective: 1000px;
+	}
+	.front-card img{
+		width: 50px;
+		height: 50px;
+	}
+	.back-card img{
+		width: 50px;
+		height: 50px;
+	}
 }

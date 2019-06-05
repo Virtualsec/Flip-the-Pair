@@ -1,128 +1,230 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <title>Flip the Pair</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body class="mt-4">
-        <div class="main-card">
-            <div class="card-header text-center pt-4 bg-light">
-                <h2><b>FLIP THE PAIR</b></h2>
+<body>
+<div class="main-board mt-5">
+    <div class="card-header text-center bg-light">
+      <center><b><h3 class="game-title">FLIP THE PAIR</h3></b></center>
+    </div>
+<!-- First-Row -->
+<div class="d-flex justify-content-center mt-5 ml-3">
+    <div class="main-container flex-column top-row">
+        <div class="main-card" data-img="facebook">
+            <div class="front-card card">
+                <img src="img/unknown-img.png">
             </div>
-<!--First Row-->
-            <div class="d-flex justify-content-center mt-5">
-                <div class="flex-column ml-3">
-                    <div class="card p-2 img-card">
-                        <img src="img/unknown-img.png"  alt="unknown-img">
-                    </div>
-                </div>
 
-                <div class="flex-column ml-3">
-                    <div class="card p-2 img-card">
-                        <img src="img/unknown-img.png"  alt="unknown-img">
-                    </div>
-                </div>
-                
-                <div class="flex-column ml-3">
-                    <div class="card p-2 img-card">
-                        <img src="img/unknown-img.png"   alt="unknown-img">
-                    </div>
-                </div>
-                
-                <div class="flex-column ml-3">
-                    <div class="card p-2 img-card">
-                        <img src="img/unknown-img.png" alt="unknown-img">
-                    </div>
-                </div>
+            <div class="back-card card">
+                <img src="img/social-img/facebook.png">
             </div>
-<!--Second Row-->
-            <div class="d-flex justify-content-center mt-3">
-                    <div class="flex-column ml-3">
-                        <div class="card p-2 img-card">
-                            <img src="img/unknown-img.png"  alt="unknown-img">
-                        </div>
-                    </div>
-    
-                    <div class="flex-column ml-3">
-                        <div class="card p-2 img-card">
-                            <img src="img/unknown-img.png" alt="unknown-img">
-                        </div>
-                    </div>
-                    
-                    <div class="flex-column ml-3">
-                        <div class="card p-2 img-card">
-                            <img src="img/unknown-img.png" alt="unknown-img">
-                        </div>
-                    </div>
-                    
-                    <div class="flex-column ml-3">
-                        <div class="card p-2 img-card">
-                            <img src="img/unknown-img.png" alt="unknown-img">
-                        </div>
-                    </div>
-                </div>
-<!--Third Row-->
-                <div class="d-flex justify-content-center mt-3">
-                        <div class="flex-column ml-3">
-                            <div class="card p-2 img-card">
-                                <img src="img/unknown-img.png" alt="unknown-img">
-                            </div>
-                        </div>
-        
-                        <div class="flex-column ml-3">
-                            <div class="card p-2 img-card">
-                                <img src="img/unknown-img.png" alt="unknown-img">
-                            </div>
-                        </div>
-                        
-                        <div class="flex-column ml-3">
-                            <div class="card p-2 img-card">
-                                <img src="img/unknown-img.png" alt="unknown-img">
-                            </div>
-                        </div>
-                        
-                        <div class="flex-column ml-3">
-                            <div class="card p-2 img-card">
-                                <img src="img/unknown-img.png" alt="unknown-img">
-                            </div>
-                        </div>
-                </div>
-<!--Forth Row-->
-                <div class="d-flex justify-content-center mt-3">
-                    <div class="flex-column ml-3">
-                        <div class="card p-2 img-card">
-                            <img src="img/unknown-img.png" alt="unknown-img">
-                        </div>
-                    </div>
-    
-                    <div class="flex-column ml-3">
-                        <div class="card p-2 img-card">
-                            <img src="img/unknown-img.png" alt="unknown-img">
-                        </div>
-                    </div>
-                    
-                    <div class="flex-column ml-3">
-                        <div class="card p-2 img-card">
-                            <img src="img/unknown-img.png" alt="unknown-img">
-                        </div>
-                    </div>
-                    
-                    <div class="flex-column ml-3">
-                        <div class="card p-2 img-card">
-                            <img src="img/unknown-img.png" alt="unknown-img">
-                        </div>
-                    </div>            
-                </div>
-                <center>
-               <button class="start-btn mt-5 btn-primary">START</button>
-                </center>
         </div>
-<script>
+    </div>
 
-</script>   
+    <div class="main-container flex-column ml-3 top-row">
+        <div class="main-card"  data-img="instagram">
+            <div class="front-card card">
+                <img src="img/unknown-img.png">
+            </div>
+
+            <div class="back-card card">
+                <img src="img/social-img/instagram.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container flex-column ml-3 top-row">
+        <div class="main-card" data-img="twitter">
+            <div class="front-card card">
+                <img src="img/unknown-img.png">
+            </div>
+
+            <div class="back-card card">
+                <img src="img/social-img/twitter.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container flex-column ml-3 mr-3 top-row">
+        <div class="main-card"  data-img="telegram">
+            <div class="front-card card">
+                <img src="img/unknown-img.png">
+            </div>
+
+            <div class="back-card card">
+                <img src="img/social-img/telegram.png">
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Second-Row -->
+<div class="d-flex justify-content-center mt-3 ml-3">
+
+    <div class="main-container flex-column ">
+        <div class="main-card"  data-img="snapchat">
+            <div class="front-card card">
+                <img src="img/unknown-img.png">
+            </div>
+            
+            <div class="back-card card">
+                <img src="img/social-img/snapchat.png">
+            </div>
+        
+        </div>
+    </div>
+    
+    <div class="main-container flex-column ml-3">
+            <div class="main-card"  data-img="spotify">
+                <div class="front-card card">
+                    <img src="img/unknown-img.png">
+                </div>
+                
+                <div class="back-card card">
+                    <img src="img/social-img/spotify.png">
+                </div>
+            </div>
+    </div>
+    <div class="main-container flex-column ml-3 ">
+        <div class="main-card"  data-img="skype">
+            <div class="front-card card">
+                <img src="img/unknown-img.png">
+            </div>
+            
+            <div class="back-card card">
+                <img src="img/social-img/skype.png">
+            </div>
+        
+        </div>
+    </div>
+    
+    <div class="main-container flex-column ml-3 mr-3">
+            <div class="main-card"  data-img="linkedin">
+                <div class="front-card card">
+                    <img src="img/unknown-img.png">
+                </div>
+                
+                <div class="back-card card">
+                    <img src="img/social-img/linkedin.png">
+                </div>
+            </div>
+    </div>
+
+</div>
+<!-- Third-Row -->
+<div class="d-flex justify-content-center mt-3 ml-3">
+
+    <div class="main-container flex-column ">
+        <div class="main-card"  data-img="telegram">
+            <div class="front-card card">
+                <img src="img/unknown-img.png">
+            </div>
+            
+            <div class="back-card card">
+                <img src="img/social-img/telegram.png">
+            </div>
+        
+        </div>
+    </div>
+    
+    <div class="main-container flex-column ml-3 ">
+            <div class="main-card"  data-img="twitter">
+                <div class="front-card card">
+                    <img src="img/unknown-img.png">
+                </div>
+                
+                <div class="back-card card">
+                    <img src="img/social-img/twitter.png">
+                </div>
+            </div>
+    </div>
+    <div class="main-container flex-column ml-3 ">
+        <div class="main-card"  data-img="instagram">
+            <div class="front-card card">
+                <img src="img/unknown-img.png">
+            </div>
+            
+            <div class="back-card card">
+                <img src="img/social-img/instagram.png">
+            </div>
+        
+        </div>
+    </div>
+    
+    <div class="main-container flex-column ml-3 mr-3 ">
+            <div class="main-card"  data-img="facebook">
+                <div class="front-card card">
+                    <img src="img/unknown-img.png">
+                </div>
+                
+                <div class="back-card card">
+                    <img src="img/social-img/facebook.png">
+                </div>
+            </div>
+    </div>
+
+</div>
+<!-- Forth-Row -->
+<div class="d-flex justify-content-center mt-3 ml-3">
+
+    <div class="main-container flex-column  ">
+        <div class="main-card"  data-img="linkedin">
+            <div class="front-card card">
+                <img src="img/unknown-img.png">
+            </div>
+            
+            <div class="back-card card">
+                <img src="img/social-img/linkedin.png">
+            </div>
+        
+        </div>
+    </div>
+    
+    <div class="main-container flex-column ml-3 ">
+            <div class="main-card"  data-img="skype">
+                <div class="front-card card">
+                    <img src="img/unknown-img.png">
+                </div>
+                
+                <div class="back-card card">
+                    <img src="img/social-img/skype.png">
+                </div>
+            </div>
+    </div>
+    <div class="main-container flex-column ml-3 ">
+        <div class="main-card"  data-img="spotify">
+            <div class="front-card card">
+                <img src="img/unknown-img.png">
+            </div>
+            
+            <div class="back-card card">
+                <img src="img/social-img/spotify.png">
+            </div>
+        
+        </div>
+    </div>
+    
+    <div class="main-container flex-column ml-3 mr-3">
+            <div class="main-card"  data-img="snapchat">
+                <div class="front-card card">
+                    <img src="img/unknown-img.png">
+                </div>
+                
+                <div class="back-card card">
+                    <img src="img/social-img/snapchat.png">
+                </div>
+            </div>
+    </div>
+
+</div> 
+</div>
+<script src="js/script.js">
+</script>
 </body>
 </html>
