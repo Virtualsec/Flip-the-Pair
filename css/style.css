@@ -39,10 +39,43 @@ body{
 .img-card img{
     width: 4.5em;
     height: 4.5em;
+    justify-content: center;
+    align-items: center;
 }
-
-
-.flip-card .img-card {
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    transition: transform 0.6s;
     transform-style: preserve-3d;
-    transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-back {
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+  }
+
+.start-btn{
+  width: 150px !important;
+  height: 40px;
+  font-weight: bold;
+  color: aliceblue;
+  font-size: 24px;
+  text-decoration: none;
+  border-radius: 25px;
+  border: none;
+  text-align: center;
+  background-color:rgb(69, 25, 110) !important;
 }
