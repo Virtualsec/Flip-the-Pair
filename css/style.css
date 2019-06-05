@@ -1,5 +1,5 @@
 body{
-	background-color:greenyellow !important;
+	background: linear-gradient(to right, #00f260, #0575e6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,10 +13,16 @@ body{
 	font-weight: bold !important;
 	font-size: 32px !important;
 }
+.author-title{
+	margin-top:15px; 
+	font-weight: bold !important;
+	font-size: 14px !important;
+	color:white;
+}
 .main-board{
 	width: 550px;
-	height: 605px;
-	background-color:purple;
+	height: 625px;
+	background: linear-gradient(to bottom, #7f00ff, #e100ff); 
 	border-radius:5px;
 }
 .main-container{
@@ -74,11 +80,12 @@ body{
 	.game-title{
 		font-weight: bold !important;
 		font-size: 24px !important;
+		margin-bottom:0px !important; 
 	}
 	.main-board{
 		width: 380px;
-		height: 430px;
-		background-color:purple;
+		height: 450px;
+		background: linear-gradient(to bottom, #7f00ff, #e100ff);
 	}
 	.main-card{
 		position: absolute;
