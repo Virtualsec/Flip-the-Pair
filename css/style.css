@@ -12,6 +12,7 @@ body{
 .game-title {
 	font-weight: bold !important;
 	font-size: 32px !important;
+	margin-bottom: 0px !important;
 }
 .author-title{
 	margin-top:15px; 

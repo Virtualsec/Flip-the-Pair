@@ -4,6 +4,7 @@ let lockBoard = false;
 let firstCard, secondCard;
 
 function flipcard(){
+    if (lockBoard) return;
     this.classList.toggle('flip'); 
 
     if(!hasflippedCard){
@@ -19,7 +20,7 @@ function flipcard(){
     }
 }
  
-function matchCard(){  
+function matchCard(){   
     //Cards Matched
     if(firstCard.dataset.img === secondCard.dataset.img){
         removeFlip();
@@ -44,6 +45,15 @@ function addFlip(){
         lockBoard = false;
         },1500);
 }
+
+(function shuffle(){
+    cards.forEach(card =>{
+        let randomPlace = Math.floor(Math.random() * 16);
+        card.style.order = randomPlace;
+        console.log("testing");
+        
+    });
+})();
 
 
 cards.forEach(card => card.addEventListener('click',flipcard));
